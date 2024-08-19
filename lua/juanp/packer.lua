@@ -55,4 +55,8 @@ return require('packer').startup(function(use)
         "lewis6991/gitsigns.nvim",
         config = function() require("gitsigns").setup {} end
     }
+    use {
+      'tzachar/local-highlight.nvim',
+      config = function() require('local-highlight').setup() end
+  }
 end)
