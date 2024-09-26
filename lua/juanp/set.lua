@@ -26,3 +26,19 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.g.clipboard = {
+    name = "WslClipboard",
+    copy = {
+        ["+"] = "clip.exe",
+        ["*"] = "clip.exe",
+    },
+    paste = {
+        ["+"] = "powershell.exe Get-Clipboard",
+        ["*"] = "powershell.exe Get-Clipboard",
+    },
+    cache_enabled = 0,
+}
+
