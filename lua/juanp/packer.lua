@@ -64,4 +64,6 @@ return require('packer').startup(function(use)
       'tzachar/local-highlight.nvim',
       config = function() require('local-highlight').setup() end
   }
+  use('m4xshen/autoclose.nvim')
 end)
+
