@@ -63,5 +63,9 @@ return require('packer').startup(function(use)
     use {
       'tzachar/local-highlight.nvim',
       config = function() require('local-highlight').setup() end
-  }
+    }
+    use {
+        'nvim-treesitter/nvim-treesitter-context',
+    }
 end)
+
